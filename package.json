@@ -1,0 +1,36 @@
+{
+  "name": "agency-server",
+  "version": "1.0.0",
+  "description": "agency - frontend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanGerbeth/agency-server.git"
+  },
+  "author": "Stephan Gerbeth",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/StephanGerbeth/agency-server/issues"
+  },
+  "homepage": "https://github.com/StephanGerbeth/agency-server#readme",
+  "dependencies": {
+    "aguid": "^1.0.3",
+    "gulp-weinre": "0.0.4",
+    "h2o2": "^4.0.2",
+    "hapi": "^11.1.0",
+    "hapi-auth-jwt2": "^5.2.0",
+    "hapi-webpack-connection": "^3.3.0",
+    "inert": "^3.2.0",
+    "jsonwebtoken": "^5.4.1",
+    "lazy-cache": "^0.2.4",
+    "lodash": "^3.10.1",
+    "mixin-object": "^2.0.1",
+    "request": "^2.65.0",
+    "webpack": "^1.12.3",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9"
+  }
+}
