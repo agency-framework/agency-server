@@ -1,12 +1,8 @@
 var options = require('minimist')(process.argv.slice(2));
 
 module.exports = function(config) {
-    if(config) {
-        init(config);
-    } else {
-        return init;
-    }
-}(require(options.config)[options.env || 'development']);
+    init(config);
+}(require(process.cwd() +'/'+ options.config)[options.env || 'development']);
 
 function init(config) {
     if(config.hapi) {
