@@ -32,7 +32,7 @@
             "module": [],
             "files": {
                 "src": "./test/main.js",
-                "dest": "dev/js/app.js"
+                "dest": "js/app.js"
             },
             "port": 8051
         },
