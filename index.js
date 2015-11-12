@@ -1,10 +1,12 @@
+var options = require('minimist')(process.argv.slice(2));
+
 module.exports = function(config) {
     if(config) {
-        init(JSON.parse(config));
+        init(config);
     } else {
         return init;
     }
-}(process.env.CONFIG);
+}(require(options.config)[options.env || 'development']);
 
 function init(config) {
     if(config.hapi) {

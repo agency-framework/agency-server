@@ -4,6 +4,7 @@
   "description": "agency - frontend server",
   "main": "index.js",
   "scripts": {
+    "dev": "node index --config=./env/config/local.json --env=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,7 @@
     "jsonwebtoken": "^5.4.1",
     "lazy-cache": "^0.2.4",
     "lodash": "^3.10.1",
+    "minimist": "^1.2.0",
     "mixin-object": "^2.0.1",
     "request": "^2.65.0",
     "webpack": "^1.12.3",

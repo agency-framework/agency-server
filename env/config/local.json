@@ -1,0 +1,76 @@
+{
+    "development": {
+        "host": "localhost",
+        "dest": "dev",
+        "hapi": {
+            "options": {
+                "root": "./",
+                "port": 8050,
+                "secret": "UNSAFE: CHANGE ME"
+            },
+            "routes": [{
+                "module": "./route/debug",
+                "options": {}
+            }, {
+                "module": "./route/kewego",
+                "options": {
+                    "appKey": "UNSAFE: CHANGE ME"
+                }
+            }, {
+                "module": "./route/auth/session",
+                "options": {}
+            }, {
+                "module": "./route/static",
+                "options": {}
+            }, {
+                "module": "./route/proxy",
+                "options": {}
+            }]
+        },
+        "webpack": {
+            "plugins": [],
+            "module": [],
+            "files": {
+                "src": "./test/main.js",
+                "dest": "dev/js/app.js"
+            },
+            "port": 8051
+        },
+        "weinre": {
+            "port": 8052
+        },
+        "livereload": {
+            "port": 8053
+        }
+    },
+
+    "production": {
+        "host": "localhost",
+        "dest": "production",
+        "hapi": {
+            "options": {
+                "root": "./production",
+                "port": 8050,
+                "secret": "UNSAFE: CHANGE ME"
+            },
+            "routes": [{
+                "module": "agency-server/lib/middleware/route/debug",
+                "options": {}
+            }, {
+                "module": "agency-server/lib/middleware/route/kewego",
+                "options": {
+                    "appKey": "UNSAFE: CHANGE ME"
+                }
+            }, {
+                "module": "agency-server/lib/middleware/route/auth/session",
+                "options": {}
+            }, {
+                "module": "agency-server/lib/middleware/route/static",
+                "options": {}
+            }, {
+                "module": "agency-server/lib/middleware/route/proxy",
+                "options": {}
+            }]
+        }
+    }
+}
