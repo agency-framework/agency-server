@@ -54,21 +54,21 @@
                 "secret": "UNSAFE: CHANGE ME"
             },
             "routes": [{
-                "module": "agency-server/lib/middleware/route/debug",
+                "module": "./route/debug",
                 "options": {}
             }, {
-                "module": "agency-server/lib/middleware/route/kewego",
+                "module": "./route/kewego",
                 "options": {
                     "appKey": "UNSAFE: CHANGE ME"
                 }
             }, {
-                "module": "agency-server/lib/middleware/route/auth/session",
+                "module": "./route/auth/session",
                 "options": {}
             }, {
-                "module": "agency-server/lib/middleware/route/static",
+                "module": "./route/static",
                 "options": {}
             }, {
-                "module": "agency-server/lib/middleware/route/proxy",
+                "module": "./route/proxy",
                 "options": {}
             }]
         }
