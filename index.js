@@ -1,17 +1,14 @@
 var options = require('minimist')(process.argv.slice(2));
+var assemble = require('assemble');
 
-module.exports = function(config) {
-    init(config);
-}(require(process.cwd() +'/'+ options.config)[options.env || 'development']);
-
-function init(config) {
-    if(config.hapi) {
-        require(__dirname + '/lib/hapi')(config.hapi);
-        if(config.webpack) {
-            require(__dirname + '/lib/hapi-webpack')(config.dest, config.host, config.hapi, config.webpack);
-        }
+assemble.task('server', function () {
+    if(options.env === 'development') {
+        require('gulp-nodemon')({
+            script: require.resolve(options.server + '/lib/server'),
+            ignore: ['src/**/*'],
+            args: ['--serverConfig=' + options.serverConfig]
+        });
+    } else {
+        require(options.server + '/lib/server');
     }
-//    if(config.weinre) {
-//        require(__dirname + '/lib/weinre')(config.weinre);
-//    }
-}
+});
