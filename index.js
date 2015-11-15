@@ -4,12 +4,12 @@ var assemble = require('assemble');
 assemble.task('server', function () {
     if(options.env === 'development') {
         require('gulp-nodemon')({
-            script: require.resolve(options.server + '/lib/server'),
+            script: require.resolve(options.server + '/lib/servers'),
             ignore: ['src/**/*'],
             args: ['--serverConfig=' + options.serverConfig]
         });
     } else {
-        require(options.server + '/lib/server');
+        require(options.server + '/lib/servers');
     }
 });
 
