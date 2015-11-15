@@ -4,7 +4,8 @@
   "description": "agency - frontend server",
   "main": "index.js",
   "scripts": {
-    "dev": "node index --config=./env/config/local.json --env=development",
+    "start": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=production --server=.",
+    "dev": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=.",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,8 @@
   "homepage": "https://github.com/StephanGerbeth/agency-server#readme",
   "dependencies": {
     "aguid": "^1.0.3",
+    "assemble": "^0.6.0-beta.5",
+    "gulp-nodemon": "^2.0.4",
     "gulp-weinre": "0.0.4",
     "h2o2": "^4.0.2",
     "hapi": "^11.1.0",

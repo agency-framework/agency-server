@@ -12,3 +12,5 @@ assemble.task('server', function () {
         require(options.server + '/lib/server');
     }
 });
+
+process.once('SIGINT', function() { process.exit(0); });
