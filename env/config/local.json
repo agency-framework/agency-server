@@ -36,6 +36,9 @@
             },
             "port": 8051
         },
+        "websocket": {
+            "limitedUsers": 2
+        },
         "weinre": {
             "port": 8052
         },

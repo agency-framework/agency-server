@@ -21,6 +21,7 @@
   "dependencies": {
     "aguid": "^1.0.3",
     "assemble": "^0.6.0-beta.5",
+    "dynamic.io": "0.0.3",
     "gulp-nodemon": "^2.0.4",
     "gulp-weinre": "0.0.4",
     "h2o2": "^4.0.2",
@@ -34,6 +35,8 @@
     "minimist": "^1.2.0",
     "mixin-object": "^2.0.1",
     "request": "^2.65.0",
+    "socket.io-events": "^0.4.6",
+    "socketio-jwt": "^4.3.3",
     "webpack": "^1.12.3",
     "xmldom": "^0.1.19",
     "xpath": "0.0.9"
