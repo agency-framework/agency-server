@@ -2,7 +2,7 @@
   "name": "agency-server",
   "version": "1.0.0",
   "description": "agency - frontend server",
-  "main": "index.js",
+  "main": "assemblefile.js",
   "scripts": {
     "start": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=production --server=.",
     "dev": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=.",
