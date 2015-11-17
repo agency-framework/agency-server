@@ -16,6 +16,6 @@ module.exports = function (cb) {
     if(options.timeout) {
         setTimeout(function() {
             process.exit(0);
-        }, options.timeout);
+        }, +options.timeout);
     }
 };
