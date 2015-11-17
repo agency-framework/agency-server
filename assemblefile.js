@@ -1,3 +1,5 @@
 "use strict";
 
-require('./index');
+var assemble = require('assemble');
+
+assemble.task('server', require('./index'));

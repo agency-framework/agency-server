@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=production --server=.",
     "dev": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=.",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/assemble/bin/assemble server --serverConfig=./env/config/local.json --env=development --server=. --timeout=30000"
   },
   "repository": {
     "type": "git",
