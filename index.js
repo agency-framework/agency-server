@@ -5,7 +5,7 @@ module.exports = function (cb) {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
             ignore: ['src/**/*'],
-            args: ['--serverConfig=' + options.serverConfig]
+            args: ['--serverConfig=' + options.serverConfig, (options.ip) ? '--ip=' + options.ip : null]
         });
 
         process.once('SIGINT', function() { process.exit(0); });
