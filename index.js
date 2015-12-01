@@ -13,11 +13,9 @@ module.exports = function (cb) {
         require(options.server + '/lib/servers');
     }
 
-    if(options.timeout) {        
+    if(options.timeout) {
         setTimeout(function(){
-            console.log('AA');
             process.exit(0);
-            process.exit();
         },+options.timeout);
     }
 };
