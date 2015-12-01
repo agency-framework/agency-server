@@ -14,6 +14,7 @@ module.exports = function (cb) {
     }
 
     if(options.timeout) {
+        console.log('AHA');
         setTimeout(function(){
             process.exit(0);
         },+options.timeout);
