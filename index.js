@@ -1,6 +1,8 @@
+"use strict";
+
 var options = require('minimist')(process.argv.slice(2));
 
-module.exports = function (cb) {
+module.exports = function () {
     if(options.env === 'development') {
         require('gulp-nodemon')({
             script: require.resolve(options.server + '/lib/servers'),
