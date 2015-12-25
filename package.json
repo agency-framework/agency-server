@@ -20,7 +20,6 @@
   "homepage": "https://github.com/StephanGerbeth/agency-server#readme",
   "dependencies": {
     "aguid": "^1.0.3",
-    "assemble": "^0.6.0-beta.5",
     "dynamic.io": "0.0.3",
     "gulp-nodemon": "^2.0.4",
     "gulp-weinre": "0.0.4",
