@@ -1,5 +1,5 @@
 "use strict";
 
-var assemble = require('assemble');
+var gulp = require('gulp');
 
-assemble.task('server', require('./index'));
+gulp.task('server', require('./index'));
