@@ -21,6 +21,8 @@
   "dependencies": {
     "aguid": "^1.0.3",
     "dynamic.io": "0.0.3",
+    "fb": "^1.0.2",
+    "goo.gl": "^0.1.4",
     "gulp-nodemon": "^2.0.4",
     "gulp-weinre": "0.0.4",
     "h2o2": "^4.0.2",
