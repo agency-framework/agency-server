@@ -40,6 +40,7 @@
     "socket.io": "^1.4.5",
     "socket.io-events": "^0.4.6",
     "socketio-jwt": "^4.3.3",
+    "url-parse": "^1.0.5",
     "webpack": "^1.12.3",
     "webpack-dev-server": "1.10.1",
     "xmldom": "^0.1.19",
