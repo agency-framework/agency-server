@@ -1,6 +1,6 @@
 {
   "name": "agency-server",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "description": "agency - frontend server",
   "main": "assemblefile.js",
   "scripts": {
@@ -12,8 +12,18 @@
     "type": "git",
     "url": "git+https://github.com/StephanGerbeth/agency-server.git"
   },
-  "author": "Stephan Gerbeth",
-  "license": "GPL-3.0",
+  "license": "MIT",
+  "author": "Stephan Gerbeth <stephan.gerbeth@gmail.com>",
+  "contributors": [
+    {
+      "name": "Stephan Gerbeth",
+      "email": "stephan.gerbeth@grabarzundpartner.de"
+    },
+    {
+      "name": "Thorn Walli",
+      "email": "lammpee@gmail.com; thorn.walli@grabarzundpartner.de"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/StephanGerbeth/agency-server/issues"
   },
@@ -28,7 +38,6 @@
     "h2o2": "^4.0.2",
     "hapi": "^11.1.0",
     "hapi-auth-jwt2": "^5.2.0",
-    "hapi-heroku-helpers": "^2.0.0",
     "hapi-webpack-connection": "^3.3.0",
     "inert": "^3.2.0",
     "jsonwebtoken": "^5.4.1",
